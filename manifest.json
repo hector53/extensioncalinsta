@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Asistente Virtual",
+  "homepage_url": "http://localhost:8080/",
+  "description": "El asistente que necesitabas",
+  "default_locale": "en",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "topSites",
+    "history",
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    }
+  },
+  "version": "0.1.0",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt8wjwdxvEI/xiGUN+N8c9aTT5JWjpACNAVVRGAaJD/cmiLtq0pFtwtkUbfVR8VUKaN5S3pYRaDthz+f97zoSlUS2RwOlviP1G0AkTUiWxndO+XpvLXvbeuZHhKt0wBnPTLVAGpJKLa/aTPqaoD8zk7JXVMOTN49Ptre5nfjyMK3jyqNgk7iWz3QAkmEaAelDF5jmTWmnDz/BgNP8zrVtNpPso8TsxILM3mqt39DvA7SXwsQARYs9PCmiv7IQt00GaH50RY8U63QcsCzHuhWRInAwUJv4L2OB6iANJsb2OSwaUO3iZ+AO9dbJlFq9vQ1E8whli0BGaHswSuuD3j0NfQIDAQAB"
+}
